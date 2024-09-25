@@ -100,7 +100,7 @@ const Projets = () => {
             ))}
             {/* Buttons */}
             <SliderButons
-              containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] md:bottom-0 z-20 w-full justify-between md:w-max md:justify-none bg-transparent opacity-50 hover:opacity-100"
+              containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] md:bottom-[80px] md:right-[140px] z-20 w-full justify-between md:w-max md:justify-none bg-transparent opacity-50 hover:opacity-100"
               btnStyles="bg-[#207E73] hover:bg-[#1C6961] text-[22px] w-[44px] h-[50px] flex justify-center items-center transition-all"
               iconStyles="bg-[#207E73] hover:bg-[#1C6961] transition-all"
             />
