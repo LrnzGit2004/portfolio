@@ -5,13 +5,9 @@ import Title from "../Title";
 const Services = () => {
   return (
     <div className="container mx-auto mt-40 text-white">
-      <Title
-      title = "Services"
-      >
-        
-      </Title>
+      <Title title="Services"/>
       <div className="grid gap-5 md:grid-cols-2">
-      <Cart
+        <Cart
           title="Developpement web frontend"
           description="Besoins d'un site web, statique ou dynamique, d'un site vitrine ou d'un site informatif le tout avec les dernières technos du moment ? Contactez-moi pour un travail de qualité à prix compétitifs."
         />
@@ -27,9 +23,7 @@ const Services = () => {
           title="Dessins et illustrations"
           description="Je réalise aussi des portraits au stylo, crayons, ainsi que des dessins classiques de manga, personnages...Pour vos flyers, bagdes, cartes de visites contactez-moi."
         />
-      
       </div>
-        
     </div>
   );
 };

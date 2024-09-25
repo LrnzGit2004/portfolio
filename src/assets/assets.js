@@ -32,32 +32,3 @@ export const LinksApp = [
 ];
 
 /* Projets */
-export const Projets = [
-  {
-    num: "01",
-    category: "projet frontend",
-    title: "React-School",
-    description: "Ce projet tiré d'une formation certifiante sur GreatStack.com m'a permis de faire mes débuts avec reactJs. C'est avec nostalgie qu'il fait partie des projets proposés sur mon portfolio.",
-    stack: [{name:"ReactJs"}, {name: "CSS 3"}],
-    image: react_school,
-    source: 'https://lrnzgit2004.github.io/brise-services/'
-  },
-  {
-    num: "02",
-    category: "Portfolio",
-    title: "Brise-Services",
-    description: "Le client 'Brise-Service' était tout content de recevoir un email contenant l'adresse de son porfolio professionnel en ligne. Cette application lui permettra maintenant d'être plus visible sur internet. Elle est à l'image de son directeur car, c'est lui même qui a fourni la maquette.",
-    stack: [{name:"ReactJs"}, {name: "Tailwind CSS"}],
-    image: react_school,
-    source: 'https://github.com/LrnzGit2004/react-school-version-true'
-  },
-  {
-    num: "03",
-    category: "Application Power-Apps",
-    title: "Assets Management App",
-    description: "La centrale à gaz de Kribi jouit aujourd'hui d'une application faite maison qui leur permet de gérer efficacement les stocks du département IT. AMA est une solution full cloud que nous leur avons proposé en combinant les différents outils de la Microsoft Poxer Plateforme et le langage Power FX",
-    stack: [{name:"Power apps"}, {name: "Power automate"}, {name: "Power FX"}],
-    image: asset_management_app,
-    source: ''
-  },
-]
