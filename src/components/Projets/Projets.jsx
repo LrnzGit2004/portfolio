@@ -53,7 +53,7 @@ const Projets = () => {
 
   return (
     <div className="container mx-auto mt-40 text-white min-h-[80vh] flex flex-col justify-center py-12 md:px-0">
-        <Title title='Projets'></Title>
+      <Title title="Projets"></Title>
       <div className="flex flex-col mt-14 md:flex-row md:gap-[30px]">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[10px]">
@@ -99,7 +99,11 @@ const Projets = () => {
               </SwiperSlide>
             ))}
             {/* Buttons */}
-            <SliderButons containerStyles='flex gap-2 absolute right-0 bottom-[calc(50%-22px)] md:bottom-0 z-20 w-full justify-between md:w-max md:justify-none' btnStyles='bg-[#207E73] hover:bg-[#1C6961] text-[22px] w-[44px] flex justify-center items-center transition-all' iconStyles='bg-[#207E73] hover:bg-[#1C6961] transition-all'/>
+            <SliderButons
+              containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%-22px)] md:bottom-0 z-20 w-full justify-between md:w-max md:justify-none bg-transparent opacity-50 hover:opacity-100"
+              btnStyles="bg-[#207E73] hover:bg-[#1C6961] text-[22px] w-[44px] h-[50px] flex justify-center items-center transition-all"
+              iconStyles="bg-[#207E73] hover:bg-[#1C6961] transition-all"
+            />
           </Swiper>
         </div>
       </div>
