@@ -23,7 +23,7 @@ const Skills = () => {
         </p>
         <progress value={90} max={100} className="md:w-full"></progress>
       </div>
-      <div className="flex flex-col items-center gap-2 mt-5 md:mt-0">
+      <div className="flex flex-col items-center gap-2 mt-10 md:mt-0">
         <div>
           <img
             src={assets.javascript_logo}
@@ -35,7 +35,7 @@ const Skills = () => {
         complétés</p>
         <progress value={60} max={100} className="md:w-full"></progress>
       </div>
-      <div className="flex flex-col items-center gap-2 mt-5 md:mt-0">
+      <div className="flex flex-col items-center gap-2 mt-10 md:mt-0">
         <div className="flex gap-2">
           <img
             src={assets.tailwind_3d}
@@ -53,7 +53,7 @@ const Skills = () => {
         </p>
         <progress value={80} max={100} className="md:w-full"></progress>
       </div>
-      <div className="flex flex-col items-center gap-2 mt-5 md:mt-0">
+      <div className="flex flex-col items-center gap-2 mt-10 md:mt-0">
         <div>
           <img
             src={assets.react_3d}

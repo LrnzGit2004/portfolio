@@ -7,7 +7,7 @@ import { assets } from "../../assets/assets";
 const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <nav className="flex gap-8">
+    <nav className="flex gap-8 shadow-lg">
       {/* //on map sur les liens générés dans la variable LinksApp de assets */}
       <ul className="hidden lg:flex gap-8 text-xl">
         {LinksApp.map((link) => (
