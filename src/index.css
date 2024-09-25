@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Outfit';
+    background: #0D1514;
+}
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+progress {
+    appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #0EB39E;
+    cursor: pointer;
+}
+progress:hover {
+    box-shadow: 0 0 20px #023B37;
+    cursor: pointer;
+}
+progress::-webkit-progress-bar {
+    background-color: #084843;
+    border-radius: 10px;
+}
+progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: #0EB39E;
+    animation: anim-html-css 2s;
+}
+
+/* avatar border animation */
+.box {
+    width: 350px;
+    height: 334px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.box:hover {
+    box-shadow:  0 0 40px rgba(20, 227, 210, 0.5);
+    cursor: pointer;
+    /* animation: animate 2s linear infinite; */
+}
+.box::before {
+    content: '';
+    position: absolute;
+    inset: 20px 50px;
+    background: linear-gradient(315deg, #145750, #0BD8B6);
+    animation: animate 4s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: url(assets/profil.jpg);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(360deg);
+    }
+}
