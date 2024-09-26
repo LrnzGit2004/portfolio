@@ -3,13 +3,14 @@ import { Link } from "react-scroll";
 import { LinksApp } from "../../assets/assets";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { assets } from "../../assets/assets";
+import Button from "../Button";
 
 const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <nav className="flex gap-8 shadow-lg">
+    <nav className="flex gap-8">
       {/* //on map sur les liens générés dans la variable LinksApp de assets */}
-      <ul className="hidden lg:flex gap-8 text-xl">
+      <ul className="hidden lg:flex gap-8 text-lg xl:text-xl items-center">
         {LinksApp.map((link) => (
           <li key={link.id}>
             <Link
@@ -20,11 +21,14 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        console.log(Link);
+        
+        <Button>Contactez-moi</Button>
       </ul>
 
       <div className="flex items-center">
         <img
-          onClick={()=>setVisible(true)}
+          onClick={() => setVisible(true)}
           src={assets.menu}
           alt=""
           className="w-10 cursor-pointer lg:hidden"
@@ -42,7 +46,6 @@ const NavBar = () => {
             className="flex items-center gap-4 p-3 cursor-pointer "
             onClick={() => setVisible(false)}
           >
-            
             <FaArrowCircleRight className="bg-[#111C1B] w-10 h-10 rounded-full" />
           </div>
           {/* //on map sur les liens générés dans la variable LinksApp de assets */}
@@ -58,6 +61,7 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <Button className="sm:order-1">Contactez-moi</Button>
         </div>
       </div>
     </nav>

@@ -21,14 +21,13 @@ export const assets = {
   bootstrap_logo,
   asset_management_app,
   brise_services,
-  react_school
+  react_school,
 };
 
 export const LinksApp = [
-  { id:1, name: "Acceuil", link: "/" },
-  { id:2, name: "Services", link: "/" },
-  { id:3, name: "Projets", link: "/" },
-  { id:4, name: "A propos", link: "/" },
+  { id: 1, name: "Acceuil", link: "#hero" },
+  { id: 2, name: "Services", link: "#service" },
+  { id: 3, name: "Projets", link: "#project" },
+  { id: 4, name: "A propos", link: "#about" },
 ];
 
-/* Projets */

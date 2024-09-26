@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 
 const Skills = () => {
   return (
-    <div className="gap-5 sm:grid sm:grid-cols-2 md:flex md:justify-between items-center  text-white mt-20 lg:mt-0  container mx-auto text-lg">
+    <div className="gap-5 sm:grid sm:grid-cols-2 md:flex md:justify-between items-center mt-20 lg:mt-0 text-lg">
       <div className="flex flex-col items-center gap-2">
         <div className="flex gap-0">
           <img

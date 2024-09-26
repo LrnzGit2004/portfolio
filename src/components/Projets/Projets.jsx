@@ -52,7 +52,10 @@ const Projets = () => {
   };
 
   return (
-    <div className="container mx-auto mt-40 text-white min-h-[80vh] flex flex-col justify-center py-12 md:px-0">
+    <div
+      className="mt-40 min-h-[80vh] flex flex-col justify-center py-12 md:px-0"
+      id="project"
+    >
       <Title title="Projets"></Title>
       <div className="flex flex-col mt-14 md:flex-row md:gap-[30px]">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
@@ -86,6 +89,8 @@ const Projets = () => {
             slidesPerView={1} // Assurez-vous que cela est défini pour 1
             className="md:h-[520px] mb-12"
             onSlideChange={handleSlideChange}
+            loop={true}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
           >
             {ProjetsPortfolio.map((project, index) => (
               <SwiperSlide key={index}>

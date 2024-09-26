@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const Services = () => {
   return (
-    <div className="container mx-auto mt-40 text-white">
+    <div className="mt-40" id="service">
       <Title title="Services"/>
       <div className="grid gap-5 md:grid-cols-2">
         <Cart
