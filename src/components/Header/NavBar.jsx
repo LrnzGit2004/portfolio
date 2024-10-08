@@ -21,7 +21,7 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
-        console.log(Link);
+        
         
         <Button>Contactez-moi</Button>
       </ul>
@@ -61,7 +61,7 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <Button className="sm:order-1">Contactez-moi</Button>
+          <Button>Contactez-moi</Button>
         </div>
       </div>
     </nav>

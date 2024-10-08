@@ -89,7 +89,6 @@ const Projets = () => {
             slidesPerView={1} // Assurez-vous que cela est défini pour 1
             className="md:h-[520px] mb-12"
             onSlideChange={handleSlideChange}
-            loop={true}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
           >
             {ProjetsPortfolio.map((project, index) => (
