@@ -4,16 +4,21 @@ import Home from './components/Hero/Home'
 import Services from './components/Services/Services'
 import Projets from './components/Projets/Projets'
 import About from './components/About/About'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer'
 
 
 const App = () => {
   return (
-    <div className="container mx-auto text-white">
+    <div className="container mx-auto text-[#fbfffe]">
       <Header/>
+      <div className='className="container mx-auto'></div>
       <Home/>
       <Services/>
       <Projets/>
       <About/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

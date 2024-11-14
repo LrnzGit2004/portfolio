@@ -15,7 +15,7 @@ const ProjetsPortfolio = [
       "Ce projet tiré d'une formation certifiante sur GreatStack.com m'a permis de faire mes débuts avec reactJs. C'est avec nostalgie qu'il fait partie des projets proposés sur mon portfolio.",
     stack: [{ name: "ReactJs" }, { name: "CSS 3" }],
     image: assets.react_school,
-    source: "https://lrnzgit2004.github.io/brise-services/",
+    source: "https://github.com/LrnzGit2004/react-school-version-true",
   },
   {
     num: "02",
@@ -25,7 +25,7 @@ const ProjetsPortfolio = [
       "Le client 'Brise-Service' était tout content de recevoir un email contenant l'adresse de son portfolio professionnel en ligne. Cette application lui permettra maintenant d'être plus visible sur internet. Elle est à l'image de son directeur car, c'est lui même qui a fourni la maquette.",
     stack: [{ name: "ReactJs" }, { name: "Tailwind CSS" }],
     image: assets.brise_services,
-    source: "https://github.com/LrnzGit2004/react-school-version-true",
+    source: "https://lrnzgit2004.github.io/brise-services/",
   },
   {
     num: "03",
@@ -39,7 +39,7 @@ const ProjetsPortfolio = [
       { name: "Power FX" },
     ],
     image: assets.asset_management_app,
-    source: "",
+    // source: "#",
   },
 ];
 
@@ -53,15 +53,15 @@ const Projets = () => {
 
   return (
     <div
-      className="mt-40 min-h-[80vh] flex flex-col justify-center py-12 md:px-0"
+      className="mt-40 min-h-[80vh] flex flex-col justify-center md:px-0"
       id="project"
     >
-      <Title title="Projets"></Title>
+      <Title title="Projets"/>
       <div className="flex flex-col mt-14 md:flex-row md:gap-[30px]">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[10px]">
-            <div className="text-8xl">{project.num}</div>
-            <h2 className="text-[42px] font-bold">{project.category}</h2>
+            <div className="lg:text-6xl text-4xl">{project.num}</div>
+            <h2 className="lg:text-[42px] text-3xl font-bold">{project.category}</h2>
             <p>{project.description}</p>
             <ul className="flex gap-3 text-[#0EB39E] border-b-2 pb-2">
               {project.stack.map((item, index) => (
@@ -70,7 +70,7 @@ const Projets = () => {
                 </li>
               ))}
             </ul>
-            <div className="w-[157px]">
+            <div className="w-40">
               <a
                 href={project.source}
                 target="_blank"
@@ -78,7 +78,7 @@ const Projets = () => {
                 className="flex items-center mt-5 gap-2 hover:text-[#0EB39E]"
               >
                 En savoir plus...
-                <FaGithub className="w-9 h-9 rounded-full flex items-center justify-center text-white hover:text-[#0EB39E]" />
+                <FaGithub className="lg:w-9 lg:h-9 w-5 h-5 rounded-full flex items-center justify-center text-white hover:text-[#0EB39E]" />
               </a>
             </div>
           </div>

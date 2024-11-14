@@ -18,7 +18,7 @@ const Skills = () => {
           />
         </div>
         <p>
-          +50 repository <br />
+          +20 repositories <br />
           github
         </p>
         <progress value={90} max={100} className="md:w-full"></progress>

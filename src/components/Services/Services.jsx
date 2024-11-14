@@ -5,11 +5,11 @@ import Title from "../Title";
 const Services = () => {
   return (
     <div className="mt-40" id="service">
-      <Title title="Services"/>
+      <Title title="Services" />
       <div className="grid gap-5 md:grid-cols-2">
         <Cart
           title="Developpement web frontend"
-          description="Besoins d'un site web, statique ou dynamique, d'un site vitrine ou d'un site informatif le tout avec les dernières technos du moment ? Contactez-moi pour un travail de qualité à prix compétitifs."
+          description="Besoins d'un site web, statique ou dynamique, d'un site vitrine ou d'un site informatif le tout avec les dernières technos' du moment ? Contactez-moi pour un travail de qualité à prix compétitifs."
         />
         <Cart
           title="Intégration web"
@@ -17,7 +17,7 @@ const Services = () => {
         />
         <Cart
           title="Power-apps Application"
-          description="Par ailleurs, une autre de mes casquettes comprend le developpement d'applications Power-apps. Bien evidemment cela comprend aussi l'utilisation de tous les outils de la microsoft power plateforme."
+          description="Par ailleurs, une autre de mes casquettes comprend le developpement d'applications Power-apps. Bien evidemment cela inclut aussi l'utilisation de tous les outils de la microsoft power plateforme."
         />
         <Cart
           title="Dessins et illustrations"

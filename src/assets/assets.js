@@ -9,7 +9,9 @@ import bootstrap_logo from "./bootstrap-logo.png";
 import asset_management_app from "./asset-management-app.png";
 import brise_services from "./brise-services.png";
 import react_school from "./react-school.png";
-
+import profil_portfolio from "./profil_portfolio.jpg";
+import profil_true from "./profil-true.jpg"
+ 
 export const assets = {
   profil,
   javascript_logo,
@@ -22,12 +24,52 @@ export const assets = {
   asset_management_app,
   brise_services,
   react_school,
+  profil_portfolio,
+  profil_true
 };
 
 export const LinksApp = [
-  { id: 1, name: "Acceuil", link: "#hero" },
-  { id: 2, name: "Services", link: "#service" },
-  { id: 3, name: "Projets", link: "#project" },
-  { id: 4, name: "A propos", link: "#about" },
+  { id: 1, name: "Acceuil", link: "hero" },
+  { id: 2, name: "Services", link: "service" },
+  { id: 3, name: "Projets", link: "project" },
+  { id: 4, name: "A propos", link: "about" },
 ];
 
+export const education = [
+  {
+    institut: "Online Course GreatStack",
+    diplome: "Frontend skills",
+    duration: "juin 2024 - octobre 2024",
+    type: "Certification"
+  },
+  {
+    institut: "WenSchool",
+    diplome: "Developpeur Frontend & Point focal",
+    duration: "juillet 2024 - now",
+    type: "Exp. professionnelle"
+  },
+  {
+    institut: "IUT Ngaoundéré",
+    diplome: "Génie logiciel",
+    duration: "2022 - now",
+    type: "Diplome"
+  },
+  {
+    institut: "KPDC",
+    diplome: "Stagiaire Génie logiciel",
+    duration: "mars 2024 - juin 2024",
+    type: "Attestation"
+  },
+  {
+    institut: "Online Sololearn",
+    diplome: "HTML, CSS, Js",
+    duration: "2022",
+    type: "Certification"
+  },
+  {
+    institut: "Lycée Bilingue de Dombè",
+    diplome: "Baccalauréat Scientifique",
+    duration: "2021",
+    type: "Diplome"
+  },
+];

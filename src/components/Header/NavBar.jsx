@@ -8,22 +8,22 @@ import Button from "../Button";
 const NavBar = () => {
   const [visible, setVisible] = useState(false);
   return (
-    <nav className="flex gap-8">
-      {/* //on map sur les liens générés dans la variable LinksApp de assets */}
+    <nav className="flex">
+      {/* on map sur les liens générés dans la variable LinksApp de assets */}
       <ul className="hidden lg:flex gap-8 text-lg xl:text-xl items-center">
         {LinksApp.map((link) => (
           <li key={link.id}>
             <Link
               to={link.link}
-              className="font-medium text-lg lg:text-xl hover:text-[#0EB39E] cursor-pointer duration-200"
+              smooth={true}
+              duration={500}
+              className="font-medium text-lg hover:text-[#0EB39E] cursor-pointer duration-200"
             >
               {link.name}
             </Link>
           </li>
         ))}
-        
-        
-        <Button>Contactez-moi</Button>
+        <Button> <Link to="contact" smooth={true} duration={500} className="bg-transparent">Contactez-moi</Link></Button>
       </ul>
 
       <div className="flex items-center">
@@ -51,17 +51,22 @@ const NavBar = () => {
           {/* //on map sur les liens générés dans la variable LinksApp de assets */}
 
           {LinksApp.map((link) => (
-            <li key={link.id} className="list-none py-2 ml-4 text-xl">
+            <li
+              key={link.id}
+              className="list-none py-2 border-b-2 w-full hover:bg-[#1C6961] cursor-pointer duration-200"
+            >
               <Link
                 to={link.link}
-                className="font-medium text-lg lg:text-xl hover:text-[#0EB39E] cursor-pointer duration-200"
+                smooth={true}
+                duration={500}
+                className="font-medium text-lg bg-transparent ml-4"
                 onClick={() => setVisible(false)}
               >
                 {link.name}
               </Link>
             </li>
           ))}
-          <Button>Contactez-moi</Button>
+          <Button className={`!w-[35%] mt-4`}> <Link to="contact" smooth={true} duration={500} className="bg-transparent">Contactez-moi</Link> </Button>
         </div>
       </div>
     </nav>
