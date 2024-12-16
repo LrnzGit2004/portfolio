@@ -9,9 +9,8 @@ const Header = () => {
           @LRnZ<span className="text-[#0EB39E]">'Dev.</span>
         </h1>
         {/* navbar desktop */}
-        <div className="flex items-center justify-between gap-3 ">
-          <NavBar className="sm:order-2" />
-        </div>
+
+        <NavBar className="sm:order-2" />
       </div>
     </header>
   );

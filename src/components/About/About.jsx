@@ -1,9 +1,12 @@
-import React from "react";
+import { React, useState } from "react";
 import Title from "../Title";
 import { assets } from "../../assets/assets";
 import { education } from "../../assets/assets";
 
 const About = () => {
+  const [visible, setVisible] = useState(false);
+  const [visibleForm, setVisibleForm] = useState(false);
+
   return (
     <div className="mt-32 lg:mt-0" id="about">
       <Title title="A propos" />
@@ -25,29 +28,46 @@ const About = () => {
             javaScript <u className="text-lg">ReactJS</u> couplé à une maitrise
             des deux principaux frameworks CSS{" "}
             <u className="text-lg">Tailwind CSS</u> et{" "}
-            <u className="text-lg">BootStrap</u>. <br />
-            Par ailleurs j'ai aussi une expérience en tant que développeur de
-            solutions <u className="text-lg">PowerApps</u> et{" "}
-            <u className="text-lg">Power Automate</u>, ce qui traduit ma
+            <u className="text-lg">BootStrap</u>.
+            <br /> Par ailleurs j'ai aussi une expérience en tant que
+            développeur de solutions <u className="text-lg">
+              PowerApps
+            </u> et <u className="text-lg">Power Automate</u>, ce qui traduit ma
             polyvalence dans le monde du développement. Sans oublier bien-sur,
-            le <u className="text-lg">design UI/UX</u>. En visitant la section{" "}
-            <span className="text-[#0BD8B6] cursor-pointer" id="service">
-              Mes services
-            </span>{" "}
-            , vous en saurez plus sur les les différents services de
-            développement que je propose.
-            <br />
-            Mon objectif est de continuer à apprendre et à évoluer dans ce
-            domaine en constante évolution. Je suis toujours à la recherche de
-            nouveaux défis et d'opportunités pour collaborer et créer des
-            solutions innovantes. <br />
-            Merci de visiter mon portfolio, ou encore de{" "}
-            <a href="#" className="text-[#0BD8B6]">
-              <u>télécharger mon CV</u>
-            </a>{" "}
-            complet à jour. N'hésitez pas à me contacter si vous avez des
-            questions ou si vous souhaitez discuter d'une collaboration !
+            le <u className="text-lg">design UI/UX</u>.
+            <i
+              className={`text-[#084843] cursor-pointer  ${
+                visible ? "hidden" : ""
+              }`}
+              onClick={() => setVisible(!visible)}
+            >
+              Voir plus...
+            </i>
+            {visible ? (
+              <p>
+                En visitant la section{" "}
+                <span className="text-[#0BD8B6] cursor-pointer" id="service">
+                  Mes services
+                </span>{" "}
+                , vous en saurez plus sur les les différents services de
+                développement que je propose.
+                <br />
+                Mon objectif est de continuer à apprendre et à évoluer dans ce
+                domaine en constante évolution. Je suis toujours à la recherche
+                de nouveaux défis et d'opportunités pour collaborer et créer des
+                solutions innovantes. <br />
+                Merci de visiter mon portfolio, ou encore de{" "}
+                <a href="#" className="text-[#0BD8B6]">
+                  <u>télécharger mon CV</u>
+                </a>{" "}
+                complet à jour. N'hésitez pas à me contacter si vous avez des
+                questions ou si vous souhaitez discuter d'une collaboration !
+              </p>
+            ) : (
+              ""
+            )}
           </p>
+
           <img
             src={assets.profil_portfolio}
             alt=""

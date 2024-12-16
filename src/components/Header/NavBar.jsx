@@ -23,7 +23,17 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
-        <Button> <Link to="contact" smooth={true} duration={500} className="bg-transparent">Contactez-moi</Link></Button>
+        <Button>
+          {" "}
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="bg-transparent"
+          >
+            Contactez-moi
+          </Link>
+        </Button>
       </ul>
 
       <div className="flex items-center">
@@ -66,7 +76,17 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
-          <Button className={`!w-[35%] mt-4`}> <Link to="contact" smooth={true} duration={500} className="bg-transparent">Contactez-moi</Link> </Button>
+          <Button className={`!w-[35%] mt-4`}>
+            {" "}
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="bg-transparent"
+            >
+              Contactez-moi
+            </Link>{" "}
+          </Button>
         </div>
       </div>
     </nav>

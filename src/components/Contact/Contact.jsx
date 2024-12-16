@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div className=" basis-[48%]">
           <form onSubmit={onSubmit}>
-            <label>Votre nom</label>
+            <label>Votre nom*</label>
             <input
               type="text"
               name="name"
@@ -67,7 +67,7 @@ const Contact = () => {
               required
               className="block w-full bg-green-200/20 p-4 boder boder-0 outline-0 mb-4 mt-1 rounded-lg text-xl"
             />
-            <label>Votre numéro de téléphone</label>
+            <label>Votre numéro de téléphone*</label>
             <input
               type="number"
               name="phone"
@@ -75,7 +75,7 @@ const Contact = () => {
               required
               className="block w-full bg-green-200/20 p-4 boder boder-0 outline-0 mb-4 mt-1 rounded-lg text-xl"
             />
-            <label>Votre adresse mail</label>
+            <label>Votre adresse mail*</label>
             <input
               type="mail"
               name="mail"
@@ -83,11 +83,11 @@ const Contact = () => {
               required
               className="block w-full bg-green-200/20 p-4 boder boder-0 outline-0 mb-4 mt-1 rounded-lg text-xl"
             />
-            <label>Votre message ici</label>
+            <label>Votre message ici*</label>
             <textarea
               type="text"
               name="message"
-              rows="6"
+              rows="4"
               placeholder="Ecrivez votre message ici"
               required
               className="block w-full bg-green-200/20 p-4 boder boder-0 outline-0 mb-4 mt-1 rounded-lg text-xl resize-none"
