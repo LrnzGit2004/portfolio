@@ -21,7 +21,7 @@ const Hero = () => {
           <span className="text-[#0EB39E] border-b border-[#0EB39E]">
             développeur frontend React
           </span>{" "}
-          passioné de nouvelles technologies, avec un sens aigue du design et de
+          passionné de nouvelles technologies, avec un sens aigue du design et de
           l'observation. Je serais ravi de travailler avec vous pour créer de
           nouvelles choses. Alors, contactez-moi !
         </p>
