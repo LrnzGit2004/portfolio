@@ -57,10 +57,9 @@ progress::-webkit-progress-value {
     content: '';
     position: absolute;
     inset: 6px;
-    background: url();
-    background-image: url(assets/profil-true.jpg);
+    background-image: url(assets/me.jpg);
     background-position: center;
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
     z-index: 1;
     border-radius: 50%;
