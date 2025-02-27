@@ -73,7 +73,7 @@ const NavBar = () => {
               {link.name}
             </Link>
           ))}
-          <Button className={`!w-[30%] mt-4 text-center`}>
+          <Button className={`!w-[35%] mt-4 text-center`}>
             <Link
               to="contact"
               smooth={true}
