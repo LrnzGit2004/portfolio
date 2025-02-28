@@ -56,12 +56,14 @@ const Projets = () => {
       className="mt-40 min-h-[80vh] flex flex-col justify-center md:px-0"
       id="project"
     >
-      <Title title="Projets"/>
+      <Title title="Projets" />
       <div className="flex flex-col mt-14 md:flex-row md:gap-[30px]">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none">
           <div className="flex flex-col gap-[10px]">
             <div className="lg:text-6xl text-4xl">{project.num}</div>
-            <h2 className="lg:text-[42px] text-3xl font-bold">{project.category}</h2>
+            <h2 className="lg:text-[42px] text-3xl font-bold">
+              {project.category}
+            </h2>
             <p>{project.description}</p>
             <ul className="flex gap-3 text-[#0EB39E] border-b-2 pb-2">
               {project.stack.map((item, index) => (
