@@ -2,10 +2,11 @@ import React from "react";
 import Button from "../Button";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-scroll";
+import "./Cart.css";
 
 const Cart = ({ title, description }) => {
   return (
-    <div className="border-2 border-[#1C6961] bg-gradient-to-r from-[#0D2D2A] to-[#111C1B] h-[100%] lg:p-[30px] p-4 my-5 rounded-lg">
+    <div className="cart-container border-2 border-[#1C6961] h-[100%] lg:p-[30px] p-4 my-5 rounded-lg">
       <h1 className="lg:text-4xl text-2xl bg-transparent">{title}</h1>
       <p className="py-5 bg-transparent">
         {description}
