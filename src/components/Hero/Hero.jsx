@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="text-center leading-10 lg:text-left">
         <p className="text-2xl md:text-4xl">Salut, je suis</p>
         <h1 className="text-4xl md:mt-2 md:text-6xl mb-6 bg-clip-text text-transparent bg-gradient-to-b from-[#0BD8B6] to-[#01392f]">
-          Lorenzo SOBZE
+          Eric Lorryl SOBZE
         </h1>
         <p className="leading-7 mt-5 mb-9 max-w-[500px]">
           Je suis un jeune{" "}
