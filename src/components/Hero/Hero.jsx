@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:flex-row gap-8">
           <a
             className="flex bg-[#084843] text-white py-2 px-2 lg:px-6 rounded-lg hover:bg-[#1C6961] duration-200 gap-2 items-center w-auto"
-            href="https://drive.google.com/uc?export=download&id=1f3Uf7xNWItAibNoBmQcObm4-iBwLSMLf"
+            href="https://drive.google.com/file/d/1n2chpbbnWGy6pAH7_JuOMdNPF7wvtGVI/view?usp=drivesdk"
             download=""
           >
             Téléchargez mon CV
